@@ -1,0 +1,433 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  padding: 0px;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.sub-title {
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px #000000 solid;
+  font-weight: normal;
+}
+
+/*------------- top画像 入れない---------
+.top-image {
+	background-image: url(../images/top.jpg);
+	background-repeat: repeat-x;
+	height: 270px;
+	margin-bottom: 40px;
+}
+-----------------------------------------*/
+
+/* HEADER
+------------------------------- */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 210px;
+  margin-top: 14px;
+}
+
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 20px;
+}
+
+.main-nav a {
+  color: #432;
+}
+
+.main-nav a:hover {
+  color: #0bd;
+}
+
+
+/* container
+------------------------------- */
+#container {
+  display: flex;
+  justify-content: space-between;
+  margin- bottom: 50px;
+}
+
+
+/* aside
+------------------------------- */
+aside {
+  width: 22%;
+  background-color: #f5f5f5;
+}
+
+.sub-menu {
+  margin-bottom: 60px;
+  list-style: none;
+  padding: 0;
+}
+
+.sub-menu li {
+  border-bottom: 1px #ddd solid;
+}
+
+.sub-menu a {
+  color: #432;
+  padding: 10px;
+  display: block;
+}
+
+.sub-menu a:hover {
+  color: #0bd;
+}
+
+aside p {
+  padding: 12px 10px;
+}
+
+.aside-contents {
+  position: sticky;
+  top: 0;
+}
+
+/* main
+------------------------------- */
+main {
+  width: 70%;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.gohou_title {
+  font-size: 30px;
+  color: #FF0000;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.gohou_title_black {
+  font-size: 30px;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+/* HOME
+------------------------------- */
+#home {
+  background-image: url(images/main-bg.jpg);
+  min-height: 100vh;
+}
+
+#home .page-title {
+  text-transform: none;
+}
+
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+}
+
+/* HOMEの各項目
+------------------------------- */
+.article {
+  border-bottom: solid;
+  border-color: #000000;
+  border-width: 4px;
+  padding: 1px;
+}
+
+.chart {
+  display: flex;
+}
+
+.chart img {
+  width: 50%;
+  height: 50%;
+}
+
+
+/* グリッド
+------------------------------- */
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 5%;
+  margin-bottom: 50px;
+}
+
+figure img {
+  width: 100%;
+}
+
+.item {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-weight: bold;
+}
+
+
+/* ABOUT
+------------------------------- */
+.circle {
+  /*	flex-direction: row;	*/
+  position: relative;
+  text-align: left;
+  bottom: 7em;
+}
+
+.circle img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 3px 3px 5px #333;
+}
+
+
+/* iframe
+------------------------------- */
+iframe {
+  width: 100%;
+}
+
+
+/* CONTACT
+------------------------------- */
+form div {
+  margin-bottom: 14px;
+}
+
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 240px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  box-shadow: 1px 1px 3px 2px #000;
+}
+
+input[type="reset"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  box-shadow: 1px 1px 3px 2px #000;
+  pading: 0 0 0 30px;
+}
+
+/* ボタン */
+/* 青背景のボタンで内余白+文字でサイズ感を表現 */
+.button {
+  font-size: 1.375rem;
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+
+/* ボタンのマウスホバー時 */
+.button:hover {
+  background-color: #0090aa;
+}
+
+
+/* footer
+------------------------------- */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #000000;
+  text-align: center;
+  padding: 2px 0 0 0;
+  margin: 0;
+  color: #fff;
+}
+
+/* footer-slide
+------------------------------- */
+.footer-slide {
+  position: fixed;
+  background-color: #000000;
+}
+
+.footer-slide p {
+  margin: 0;
+  font-size: 15px;
+  color: #fff;
+  vertical-align: middle;
+  animation: flowing 180s linear infinite;
+  /*アニメーション*/
+  transform: translateX(100%);
+  /*最初の位置*/
+}
+
+@keyframes flowing {
+  100% {
+    transform: translateX(-100%);
+    /*終了の位置*/
+  }
+}
+
+.sisuu {
+  clolor: yellow;
+}
+
+/* thanks
+------------------------------- */
+.thanks {
+  text-align: center;
+  /*テキストの位置*/
+  overflow: hidden;
+  height: 500px;
+}
+
+.thanks p {
+  margin: 0;
+  font-size: 1.5em;
+  /*文字サイズ*/
+  color: #000;
+  /*文字の色*/
+  animation: thanks 30s linear infinite;
+  /*アニメーション*/
+  transform: translateY(110%);
+  /*最初の位置*/
+  height: 500px;
+}
+
+.thanks-ent {
+  text-align: right;
+}
+
+
+@keyframes thanks {
+  100% {
+    transform: translateY(-300%);
+    /*終わりの位置*/
+  }
+}
+
+.thanks img {
+  width: 100px;
+  height: 100px;
+}
+
+.slide-title {
+  font-size: 2rem;
+  /*  color:#ddd;	*/
+  color: #FFFFFF;
+  font-family: 'Zeyada', cursive;
+  text-align: center;
+  line-height: 0px;
+  text-shadow: 2px 1px rgba(55, 55, 55, 0.98);
+}
+
+/* ============================================
+  モバイル版（610px以下のCSS）
+============================================ */
+
+@media (max-width: 610px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  /* ヘッダー（HEADER）
+  ------------------------------------------ */
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+
+  .main-nav li {
+    margin: 0 20px;
+  }
+
+  article,
+  aside,
+  main {
+    width: 100%;
+  }
+
+  #container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /*@mediaの最後*/
+}
